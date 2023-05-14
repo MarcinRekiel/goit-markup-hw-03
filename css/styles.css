@@ -1,19 +1,48 @@
 body {
   font-family: "Roboto", "Segoe UI", "Tahoma", "Verdana", sans-serif;
   color: #212121;
+  width: 1600px;
 }
 :root {
   --color-text: #757575;
   --color-heading: #212121;
 }
-.header {
+p,
+a,
+h1,
+h2,
+h3,
+ul,
+figure {
+  text-decoration: none;
+  font-style: normal;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  width: 1600px;
+  padding: 0px 215px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* --------------------------------------------------menu-header-------------------------------------------------------- */
+.menu {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
-.header a:hover,
-.header a:focus {
+.menu a:hover,
+.menu a:focus {
   color: #2196f3;
 }
 .logo {
@@ -24,53 +53,192 @@ body {
   color: #2196f3;
   letter-spacing: 0.03em;
   text-decoration: none;
+  width: 145px;
+  height: 31px;
 }
-.header .logo span {
+.menu .logo span {
   color: #000000;
 }
-.footer .logo span {
-  color: #f3f0f0;
-}
 .agencja {
-  text-decoration: none;
   color: #212121;
+  width: 53px;
+  height: 16px;
+  margin-left: 93px;
 }
 .portfolio {
-  text-decoration: none;
   color: #212121;
+  width: 53px;
+  height: 16px;
+  margin-left: 46px;
 }
 .contact {
-  text-decoration: none;
   color: #212121;
+  width: 51px;
+  height: 16px;
+  margin-left: 46px;
 }
-.header .mail-tel {
-  text-decoration: none;
+.menu .mail {
   color: #757575;
+  width: 135px;
+  height: 16px;
+  margin-left: 371px;
 }
-.footer .mail {
-  color: rgba(255, 255, 255, 0.6);
+.menu .tel {
+  color: #757575;
+  width: 110px;
+  height: 16px;
+  margin-left: 50px;
 }
-.footer .tel {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+/* --------------------------------------------------footer-------------------------------------------------------- */
+footer {
+  background: #2f303a;
 }
-.footer {
+.address {
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.footer a:hover,
-.footer a:focus,
-.footer p:hover,
-.footer p:focus {
+.address a:hover,
+.address a:focus,
+.address p:hover,
+.address p:focus {
   color: #2196f3;
 }
-address {
-  font-style: normal;
-  color: #ffffff;
+.address .logo {
+  color: #2196f3;
 }
-/* porfolio */
+.address .logo span {
+  color: #f3f0f0;
+}
+.address p {
+  color: #ffffff;
+  width: 256px;
+  height: 21px;
+  margin-top: 20px;
+}
+.address a {
+  color: rgba(255, 255, 255, 0.6);
+  width: 231px;
+  height: 21px;
+  margin-top: 9px;
+}
+/* -----------------------------------------------------mane page------------------------------------------------------ */
+
+.header {
+  color: #ffffff;
+  background: #2f303a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 210px;
+}
+.header h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+  height: 120px;
+  margin: 0px;
+}
+.header button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  cursor: pointer;
+  border-style: none;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+.loremipsum {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+.loremipsum p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+.loremipsum h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-heading);
+  margin-bottom: 10px;
+}
+.item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+.doit {
+  display: flex;
+  justify-content: space-between;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-heading);
+  margin-bottom: 50px;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+.nogap {
+  display: block;
+  background-color: #ffffff;
+}
+.team p {
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+  background-color: #ffffff;
+  padding-bottom: 30px;
+}
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-heading);
+  line-height: 1.17;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+.bg {
+  background-color: #f5f4fa;
+  width: 1600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+/* ---------------------------------------------------porfolio-------------------------------------------------- */
 .buttons-pf {
   font-weight: 500;
   font-size: 16px;
@@ -99,67 +267,4 @@ address {
   letter-spacing: 0.06em;
   text-align: left;
   color: var(--color-heading);
-}
-/* index */
-.blackscreen {
-  color: #ffffff;
-  background: #2f303a;
-}
-.blackscreen h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.blackscreen .button-ag {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  background: #2196f3;
-  cursor: pointer;
-  border-style: none;
-  color: #ffffff;
-}
-
-.lorenipsun {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--color-text);
-}
-.lorenipsun h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-heading);
-}
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-heading);
-}
-.img-ag {
-  font-size: 16px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-text);
-}
-.img-ag h3 {
-  font-weight: 500;
-  font-size: 16px;
-  color: var(--color-heading);
-  line-height: 1.17;
-}
-ul {
-  list-style-type: none;
 }
