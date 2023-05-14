@@ -13,7 +13,8 @@ h1,
 h2,
 h3,
 ul,
-figure {
+figure,
+figcaption {
   text-decoration: none;
   font-style: normal;
   list-style: none;
@@ -30,6 +31,9 @@ figure {
 }
 
 /* --------------------------------------------------menu-header-------------------------------------------------------- */
+header {
+  border-bottom: 1px solid #ececec;
+}
 .menu {
   display: flex;
   align-items: center;
@@ -39,7 +43,6 @@ figure {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
 }
 .menu a:hover,
 .menu a:focus {
@@ -169,7 +172,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .loremipsum p {
   font-size: 14px;
@@ -184,12 +187,16 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-heading);
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .item {
   flex-basis: calc((100% - 90px) / 4);
 }
 .doit {
+  display: flex;
+  justify-content: space-between;
+}
+.team {
   display: flex;
   justify-content: space-between;
 }
@@ -200,13 +207,9 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-heading);
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
-.team {
-  display: flex;
-  justify-content: space-between;
-}
-.nogap {
+.team .nogap {
   display: block;
   background-color: #ffffff;
 }
@@ -229,42 +232,80 @@ h2 {
   padding-bottom: 10px;
   background-color: #ffffff;
 }
+.team figcaption {
+  background: #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-radius: 0px 0px 4px 4px;
+}
 .bg {
   background-color: #f5f4fa;
   width: 1600px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 
 /* ---------------------------------------------------porfolio-------------------------------------------------- */
-.buttons-pf {
+.we-do-it {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  background: #ffffff;
+}
+.we-do-it button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   background: #f5f4fa;
+  border-radius: 4px;
   cursor: pointer;
   border-style: none;
+  padding: 6px 22px;
+  margin-bottom: 50px;
 }
-.buttons-pf:hover,
-.buttons-pf:focus {
+.we-do-it button:hover,
+.we-do-it button:focus {
   color: #ffffff;
   background: #2196f3;
 }
-.img-pf {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--color-text);
+.made-jobs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.img-pf h2 {
+.made-jobs h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
   color: var(--color-heading);
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 4px;
+}
+.made-jobs p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+.made-jobs-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.made-jobs-item img {
+  display: block;
+}
+.made-jobs-item figcaption {
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.made-jobs .nogap {
+  display: block;
 }
